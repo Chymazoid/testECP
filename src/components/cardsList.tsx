@@ -8,7 +8,7 @@ export const CardsList: FC = () => {
 
   useEffect(() => {
     (async () => {
-      getCards().then((data: ICard[]) => setCards(data));
+      await getCards().then((data: ICard[]) => setCards(data));
     })();
   }, []);
 
