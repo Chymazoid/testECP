@@ -12,6 +12,8 @@
 
 .card__text {
   color: #535bf2;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .card__link--red {
