@@ -3,7 +3,7 @@ import { ICard } from "./types";
 
 const API_CARDS = "https://my-json-server.typicode.com/savayer/demo/posts";
 
-export const getCards = async () => {
+export const getCards = async (): Promise<ICard[]> => {
   const cards = await GET(API_CARDS);
 
   return cards.reduce((acc: ICard[], card: any) => {
